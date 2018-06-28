@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\User\\AppData\\Local\\Temp\\d-118526-14200-wawbep.6jr1ejnhfr\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\User\\AppData\\Local\\Temp\\d-118526-14200-wawbep.6jr1ejnhfr\\package.tgz",
+        "spec": "C:\\Users\\User\\AppData\\Local\\Temp\\d-118526-14200-wawbep.6jr1ejnhfr\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\User\\AppData\\Local\\Temp\\apm-install-dir-118526-14200-13k8ynx.9dpz99hpvi"
+    ]
+  ],
+  "_from": "..\\d-118526-14200-wawbep.6jr1ejnhfr\\package.tgz",
+  "_id": "monokai-corail@0.1.0",
+  "_inCache": true,
+  "_location": "/monokai-corail",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\User\\AppData\\Local\\Temp\\d-118526-14200-wawbep.6jr1ejnhfr\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\User\\AppData\\Local\\Temp\\d-118526-14200-wawbep.6jr1ejnhfr\\package.tgz",
+    "spec": "C:\\Users\\User\\AppData\\Local\\Temp\\d-118526-14200-wawbep.6jr1ejnhfr\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-118526-14200-wawbep.6jr1ejnhfr\\package.tgz",
+  "_shasum": "eeb38fdf79c729091a6eadab8b2cca07793cd71e",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\User\\AppData\\Local\\Temp\\d-118526-14200-wawbep.6jr1ejnhfr\\package.tgz",
+  "_where": "C:\\Users\\User\\AppData\\Local\\Temp\\apm-install-dir-118526-14200-13k8ynx.9dpz99hpvi",
+  "bugs": {
+    "url": "https://github.com/GUAM23/monokai-corail-atom/issues"
+  },
+  "dependencies": {},
+  "description": "Dark theme with black background for Atom Editor.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/GUAM23/monokai-corail-atom#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "black",
+    "background",
+    "monokai",
+    "corail"
+  ],
+  "license": "MIT",
+  "name": "monokai-corail",
+  "optionalDependencies": {},
+  "readme": "# monokai-corail-atom\nDark theme with black background for Atom Editor.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GUAM23/monokai-corail-syntax"
+  },
+  "theme": "syntax",
+  "version": "0.0.1"
+}

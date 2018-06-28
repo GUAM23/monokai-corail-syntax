@@ -1,0 +1,267 @@
+@white: #e9e9e9;
+@blue: #62b9d4;
+@gutter: #e9e9e9;
+@dark: #050505;
+@comment: #979797;
+@string: #E6DB74;
+@const: #AE81FF;
+@keyword: #E80487;
+@storage: @keyword;
+@tag: @keyword;
+@cursor: #F8F8F0;
+@invalid: @cursor;
+@invalid-bg: @keyword;
+@class: #A6E22E;
+@function: @class;
+@attribute: @class;
+@parameter: #FD971F;
+
+:host, atom-text-editor {
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: @dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: lighten(@dark, 10%);
+  }
+
+  .wrap-guide {
+    background: fade(@white, 1%);
+  }
+
+  .indent-guide {
+    color: fade(@white, 15%);
+  }
+
+  &, .gutter {
+    background-color: @dark;
+    color: @gutter;
+  }
+
+  &.is-focused .cursor {
+    border-color: @cursor;
+  }
+
+  &.is-focused .selection .region {
+    background-color: lighten(@dark, 20%);
+  }
+
+  &.is-focused .line-number.cursor-line-no-selection,
+  &.is-focused .line.cursor-line {
+    background-color: lighten(@dark, 10%);
+  }
+
+  .comment {
+    color: @comment;
+    font-style: italic;
+  }
+
+  .string {
+    color: @string;
+  }
+
+  .constant.numeric {
+    color: @const;
+  }
+
+  .constant.language {
+    color: @const;
+  }
+
+  .constant.character,
+  .constant.other {
+    color: @const;
+  }
+
+  .variable {
+  }
+
+  .keyword {
+    color: @keyword;
+  }
+
+  .storage {
+    color: @storage;
+  }
+
+  .storage.type {
+    font-style: italic;
+    color: @blue;
+  }
+
+  .entity.name.class {
+    text-decoration: underline;
+    color: @class;
+  }
+
+  .entity.other.inherited-class {
+    font-style: italic;
+    text-decoration: underline;
+    color: @class;
+  }
+
+  .entity.name.function {
+    color: @function;
+  }
+
+  .variable.parameter {
+    font-style: italic;
+    color: @parameter;
+  }
+
+  .entity.name.tag {
+    color: @tag;
+  }
+
+  .entity.other.attribute-name {
+    color: @attribute;
+  }
+
+  .support.function {
+    color: @blue;
+  }
+
+  .support.constant {
+    color:#b68dff;
+  }
+
+  .support.type,
+  .support.class {
+    font-style: italic;
+    color: @blue;
+  }
+
+  .invalid {
+    color: @invalid;
+    background-color: @invalid-bg;
+  }
+
+  .invalid.deprecated {
+    color: @invalid;
+    background-color: @const;
+  }
+}
+
+atom-text-editor::shadow {
+    .is-focused .selection .region {
+      background-color: black;
+    }
+
+    .is-focused .line-number.cursor-line-no-selection,
+    .is-focused .line.cursor-line {
+      background-color: lighten(@dark, 10%);
+    }
+}
+
+.syntax--source.syntax--js
+{
+    color:  #F8F8F0;
+
+    .syntax--punctuation.syntax--definition.syntax--parameters
+    {
+        color: #E6DB74 !important;
+    }
+
+    .syntax--variable
+    {
+        &.syntax--language
+        {
+            color: #E6DB74;
+        }
+    }
+
+    .syntax--constant
+    {
+        color: #8BD49C;
+
+        &.syntax--numeric
+        {
+            color: #b68dff;
+        }
+        &.syntax--boolean
+        {
+            color: #b68dff;
+        }
+        &.syntax--language
+        {
+            color: #E6DB74;
+        }
+    }
+
+    .syntax--entity.syntax--name.syntax--type.syntax--class
+    {
+        color: #CEF6E3;
+    }
+
+  .syntax--instance
+    {
+        color: #CEF6E3;
+    }
+}
+
+.syntax--php
+{
+    &.syntax--string.syntax--quoted
+    {
+        color: #E6DB74;
+
+        .syntax--begin,
+        .syntax--end
+        {
+        color: #E6DB74;
+        }
+    }
+
+    .syntax--variable
+    {
+        color: #FD971F;
+
+        .syntax--punctuation
+        {
+            color: #FD971F !important;
+        }
+    }
+
+    .syntax--support.syntax--function.syntax--construct.syntax--output
+    {
+        color: #f32929;
+    }
+
+    .syntax--support.syntax--function
+    {
+        color: #A6E22E;
+    }
+
+    .syntax--keyword
+    {
+        color: #E80487;
+    }
+
+    .syntax--entity.syntax--name.syntax--function
+    {
+        color: #62b9d4;
+    }
+
+    .syntax--parameters
+    {
+        color: #e9e9e9;
+    }
+
+    &.syntax--punctuation.syntax--section.syntax--embedded.syntax--begin,
+    &.syntax--punctuation.syntax--section.syntax--embedded.syntax--end
+    {
+        color: #A6E22E !important;
+        background-color: #323232;
+    }
+}
+
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--php,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--php
+{
+    color: #E6DB74 !important;
+}
